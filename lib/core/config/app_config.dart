@@ -12,16 +12,16 @@ import '../store/app_store.dart';
 class AppConfig {
   static init() async {
     // Inject Stores Dependencies
-    Get.putAsync<AppStore>(() => AppStore().init(), permanent: true);
-    Get.putAsync<SecureStore>(() => SecureStore().init(), permanent: true);
+    await Get.putAsync<AppStore>(() => AppStore().init(), permanent: true);
+    await Get.putAsync<SecureStore>(() => SecureStore().init(), permanent: true);
 
     // Inject Translations Dependencies
-    // Get.putAsync<AppTranslations>(() => AppTranslations().init(),permanent: true);
+    await  Get.putAsync<AppTranslations>(() => AppTranslations().init(),permanent: true);
 
 
     // Inject Themes Dependencies
-    Get.putAsync<CoreTheme>(() => LightTheme().init(),tag: ThemeTags.light.name);
-    Get.putAsync<CoreTheme>(() => DarkTheme().init(), tag: ThemeTags.dark.name);
-    Get.putAsync<ActiveTheme>(() => ActiveTheme().init(),permanent: true, tag: ThemeTags.active.name);
+    await Get.putAsync<CoreTheme>(() => LightTheme().init(),tag: ThemeTags.light.name);
+    await Get.putAsync<CoreTheme>(() => DarkTheme().init(), tag: ThemeTags.dark.name);
+    await Get.putAsync<ActiveTheme>(() => ActiveTheme().init(),permanent: true, tag: ThemeTags.active.name);
   }
 }
