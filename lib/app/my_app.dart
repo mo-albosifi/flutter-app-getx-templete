@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_getx_templete/app/bindings/splash_binding.dart';
-import 'package:flutter_app_getx_templete/app/pages/splash_page.dart';
-import 'package:flutter_app_getx_templete/app/routers/routes.dart';
+import 'package:flutter_app_getx_templete/app/screens/splash/splash_binding.dart';
+import 'package:flutter_app_getx_templete/routers/pages.dart';
+import 'package:flutter_app_getx_templete/routers/routes.dart';
 import 'package:flutter_app_getx_templete/core/enums/theme_tags.dart';
 import 'package:flutter_app_getx_templete/core/locale/app_translations.dart';
 import 'package:flutter_app_getx_templete/core/themes/core_theme.dart';
@@ -35,9 +35,7 @@ class MyApp extends StatelessWidget {
       darkTheme: darkTheme.buildTheme(context),
       locale: const Locale('ar'),
       supportedLocales: const [Locale('ar'),Locale('en','US'),Locale('en','GB')],
-      getPages: [
-        SplashPage()
-      ],
+      getPages: GetXPages.pages,
     );
   }
 }

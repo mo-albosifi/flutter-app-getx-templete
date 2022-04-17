@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app_getx_templete/base/template/master/master.dart';
 import 'package:flutter_app_getx_templete/core/enums/theme_tags.dart';
 import 'package:flutter_app_getx_templete/core/themes/core_theme.dart';
 import 'package:flutter_app_getx_templete/core/themes/dark_theme.dart';

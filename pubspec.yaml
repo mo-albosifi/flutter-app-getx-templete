@@ -23,6 +23,8 @@ dependencies:
   intl:
   image_picker:
   file_picker:
+  dio:
+
 
 
   flutter_localizations:

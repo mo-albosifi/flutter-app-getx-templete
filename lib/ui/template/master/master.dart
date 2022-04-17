@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_getx_templete/base/template/master/large/land_scape.dart';
-import 'package:flutter_app_getx_templete/base/template/master/medium/land_scape.dart';
-import 'package:flutter_app_getx_templete/base/template/master/medium/portrait.dart';
-import 'package:flutter_app_getx_templete/base/template/master/small/land_scape.dart';
-import 'package:flutter_app_getx_templete/base/template/master/small/portrait.dart';
 import 'package:flutter_app_getx_templete/core/contracts/core_controller.dart';
+import 'package:flutter_app_getx_templete/ui/template/master/large/land_scape.dart';
+import 'package:flutter_app_getx_templete/ui/template/master/medium/land_scape.dart';
+import 'package:flutter_app_getx_templete/ui/template/master/medium/portrait.dart';
+import 'package:flutter_app_getx_templete/ui/template/master/small/land_scape.dart';
+import 'package:flutter_app_getx_templete/ui/template/master/small/portrait.dart';
 import 'package:get/get.dart';
 
 class MasterTemplete<T extends CoreController> extends GetResponsiveView<T> {
